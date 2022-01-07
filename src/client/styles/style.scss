@@ -1,0 +1,42 @@
+.container {
+  width: 85vw;
+  margin: 0 auto;
+  padding-top: 5rem;
+  text-align: center;
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      * {
+        margin: 16px 0;
+      }
+      input {
+        width: 90%;
+        border-radius: 8px;
+        padding: 12px 8px;
+        border-color: darkgray;
+      }
+      button {
+        padding: 12px;
+        font-size: x-large;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(185, 31, 31);
+        color: #fff;
+        border: none;
+        transition: all 0.5s ease-in-out;
+        &:hover {
+          background-color: #fff;
+          color: rgb(185, 31, 31);
+        }
+      }
+    }
+  }
+}
