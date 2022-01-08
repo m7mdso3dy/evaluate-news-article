@@ -1,7 +1,8 @@
-import validateUrl from "./checkURL";
 const results = document.querySelectorAll('section > div');
-const handleSubmit = async (url) => {
-    const validtion = validateUrl(url);
+const handleSubmit = async (event) => {
+    event.preventDefault();
+    const url = document.querySelector('#article-url').value;
+    const validtion = Client.validateUrl(url);
     if (validtion) {
         try {
             const req = await fetch("http://localhost:8081/sentiment", {
@@ -24,5 +25,4 @@ const handleSubmit = async (url) => {
         alert('enter a valid url 😒😒😒😒😒😒');
     }
 }
-
 export default handleSubmit;

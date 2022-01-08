@@ -14,8 +14,8 @@ app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json());
 app.use(express.static('dist'))
 app.get('/', (req, res)=> {
-    res.sendFile('dist/index.html')
-    //res.sendFile(path.resolve('src/client/views/index.html'))
+    //res.sendFile('dist/index.html')
+    res.sendFile(path.resolve('src/client/views/index.html'))
 })
 const BASE_API_URL = "https://api.meaningcloud.com/sentiment-2.1";
 const MEAN_CLOUD_API_KEY = process.env.API_KEY;

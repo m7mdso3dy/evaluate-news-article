@@ -42,5 +42,9 @@ module.exports = {
                 skipWaiting: true,
             }
         ),
-    ]
+    ],
+    output:{
+        libraryTarget: 'var',
+        library: 'Client',
+    },
 }
