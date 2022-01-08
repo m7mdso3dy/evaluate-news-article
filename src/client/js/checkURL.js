@@ -13,5 +13,4 @@ const validateUrl = (url)=>{
     const regexp = new RegExp(expression);
     return regexp.test(url);
 }
-module.exports = validateUrl;
 export default validateUrl;
